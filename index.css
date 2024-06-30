@@ -147,6 +147,37 @@ transform: translateY(-20px);
     text-align: center;
     
 }
+
+
+@media (max-width: 800px){
+    h1 {
+        font-size: 30px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size:30px;
+    }
+    .rock-position {
+        top: 38px;
+        left: 50px;
+      }
+      
+      .scissor-position {
+        top: 40px;
+        left: 50px;
+      }
+      
+      .paper-position {
+        top: 40px;
+        left: 50px;
+      }
+    
+    
+}
+
+
 .sign-wrap-3 .sign_word {
     font-family: "Playwrite ES", cursive;
     font-weight: bold;
