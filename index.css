@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    transition: all 1s;
+    text-align: center;
+    align-items: center;
+}
+
+.translate{
+    transform: translateY(150px);
+    
+}
+
+.title{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-family: "Playwrite ES", cursive;
+}
+
+
+
+.buttons-start-game{
+    margin-bottom: 20px;
+    
+}
+.disable-button{
+    display: none;
+}
+
+.game-toggle{
+    display: none;
+}
+
+
+
+.button{
+    transition: all 1s;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 30px
+}
+
+.button{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+}
+.button:hover{
+transform: translateY(-20px);
+}
+
+.green{
+    color: rgb(0, 255, 0);
+}
+
+.red{
+    color: rgb(241, 0, 0);
+}
+
+
+
+.computer-icons{ 
+    display: flex;
+    width: 100px; 
+    height: 150px; 
+    margin-top: 70px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.icons-text{
+    margin-top: 55px;
+}
+
+.icon{
+    
+    position: relative; 
+}
+
+
+.rock{
+    transition: all 1s;
+    opacity: 0;
+    /* transform: translateX(1570px); */
+}
+
+.scissor{
+    transition: all 1s;
+    opacity: 0;
+    /* transform: translateX(1500px); */
+}
+
+.paper{
+    transition: all 1s;
+    opacity: 0;
+    /* transform: translateX(1430px); */
+}
+
+
+  .style-computer-icons {
+    position: absolute; /* Делаем дочерние элементы абсолютными */
+    font-size: 50px; 
+    transition: all 1s;
+    
+  }
+  .rock-position {
+    top: 58px;
+    left: 50px;
+  }
+  
+  .scissor-position {
+    top: 60px;
+    left: 50px;
+  }
+  
+  .paper-position {
+    top: 60px;
+    left: 50px;
+  }
+
+
+
+
+
+
+
+
+  .sign-wrap-3 {
+    font-family: "Playwrite ES", cursive;
+    text-align: center;
+    
+}
+.sign-wrap-3 .sign_word {
+    font-family: "Playwrite ES", cursive;
+    font-weight: bold;
+    line-height: 50px;
+    color: #0b602e;
+    text-transform: uppercase;
+    animation: neon-3 2s steps(1, start) infinite reverse;
+}
+@keyframes neon-3 {
+    0%{
+        color: #bd1010;
+        text-shadow: 0 0 3px #bd1010, 0 0 8px #bd1010;
+    }
+    80%{
+        color: #0b602e;
+        text-shadow: 0 0 3px #0b602e,0 0 10px #0b602e,0 0 50px #79a7fc;
+    }
+    81%{
+        color: #E1F5FE;
+        text-shadow: 0 0 3px #0b602e,0 0 10px #0b602e,0 0 50px #79a7fc;
+    }
+    82%{color: #bd1010;
+        text-shadow: 0 0 3px #0b602e, 0 0 8px #bd1010;
+    }
+    83%{
+        color: #E1F5FE;
+        text-shadow: 0 0 3px #0b602e,0 0 10px #0b602e,0 0 50px #79a7fc;
+    }
+    84%{
+        color: #bd1010;
+        text-shadow: 0 0 3px #bd1010, 0 0 8px #bd1010;
+    }
+    85%{
+        color: #E1F5FE;
+        text-shadow: 0 0 3px #0b602e,0 0 10px #0b602e,0 0 50px #79a7fc;
+    }
+    100%{
+        color: #bd1010;
+        text-shadow: 0 0 3px #bd1010,0 0 8px #bd1010;
+    }
+}
+
+
+.end-game{
+    display: none;
+}
+
+
+.glow-on-hover {
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 40px;
+    box-shadow: 5px 4px 16px 5px rgba(0,0,0,0.2);
+    border: none;
+    font-size: large;
+    outline: none;
+    color: #000000;
+    background: #08df3d;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #f20202
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

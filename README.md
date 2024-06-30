@@ -1,1 +1,1 @@
-# js-dom-game
+# game.js

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container" class="container translate">
+      <div class="title sign-wrap-3">
+        <h1 class="title-text sign_word">GAME</h1>
+        <button id="game-start" class="start-game glow-on-hover">START</button>
+      </div>
+      <div class="check game-toggle">
+        <div id="choices" class="buttons-start-game buttons-start-game2">
+          <button class="button" onclick="playGame('камень')">🪨</button>
+          <button class="button" onclick="playGame('ножницы')">✂️</button>
+          <button class="button" onclick="playGame('бумага')">📃</button>
+        </div>
+        <div class="date-game">
+          <p id="playerScore"></p>
+          <p id="computerScore"></p>
+          <h2 class="new-class" id="result"></h2>
+          <h1 class="" id="end-results"></h1>
+          
+        </div>
+        <div class="computer-icons">
+          <div class="icons-text">
+            <h3>Computer:</h3>
+          </div>
+          <div class="icon">
+            <div id="rock" class="style-computer-icons rock-position rock ">🪨</div>
+            <div id="scissor" class="style-computer-icons scissor-position scissor " >✂️</div>
+            <div id="paper" class="style-computer-icons paper-position paper" >📃</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
+
